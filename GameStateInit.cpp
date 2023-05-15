@@ -1,4 +1,5 @@
 #include "GameStateInit.h"
+//遊戲狀態初始化
 
 GameStateInit::GameStateInit() {
     // 遊戲的初值、圖形設定
