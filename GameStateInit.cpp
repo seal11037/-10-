@@ -2,7 +2,7 @@
 //遊戲狀態初始化
 
 GameStateInit::GameStateInit() {
-    // 遊戲的初值、圖形設定
+    // 遊戲的初值、圖形設定(10*10場地、10顆炸彈)
     rows = 10;
     cols = 10;
     num_mines = 10;
