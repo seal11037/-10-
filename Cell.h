@@ -16,6 +16,7 @@ public:
     void setFlagged(bool value);
     int getNumMines();
     void setNumMines(int num);
+    char getSymbol();
 
 private:
     int row;
