@@ -15,16 +15,16 @@ public:
     void flag_cell(int row, int col);
     void check_win();
     void reset_game();
-
-private:
     int rows;
     int cols;
+    bool game_over;
+    bool game_won;
+    Cell** cells;
+
+private:
     int num_mines;
     int num_mines_placed;
     int num_flags_placed;
     int num_cells_revealed;
-    bool game_over;
-    bool game_won;
-    Cell** cells;
 };
 #endif
