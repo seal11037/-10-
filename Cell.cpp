@@ -67,3 +67,21 @@ void Cell::setNumMines(int num) {
     //設置周圍的地雷數量
     numMines = num;
 }
+
+char Cell::getSymbol() {
+    //根據格子的狀態顯示對應的代號
+    if (flagged) {
+        //如果標記為旗幟 顯示F
+        return 'F';
+    } else if (!revealed) {
+        //如果未被打開 顯示？
+        return '?';
+    } else if (mine) {
+        //如果被打開為地雷 顯示Ｘ
+        return 'X';
+    } else {
+        //已打開且周圍有地雷的情况下 顯示對應的數字
+        return static_cast<char>('0' + numMines);
+    }
+}
+
