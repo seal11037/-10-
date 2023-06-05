@@ -1,8 +1,6 @@
 #include "Minesweeper.h"
 
 int main() {
-    int choice=1;
-    while(choice==1){
         cout << "Welcome to Minesweeper!" << endl;
 
         while (true) {
@@ -25,6 +23,6 @@ int main() {
                 cout << "無效的選擇，再試一次" << endl;
             }
         }
-    }
+    
     return 0;
 }
