@@ -9,7 +9,7 @@ int main() {
             cout << "2.退出：" << endl;
             cout << "輸入您的選擇：";
         
-
+            int choice;
             cin >> choice;
 
             if (choice == 1) {
